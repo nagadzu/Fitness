@@ -1,0 +1,587 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Tahoma', sans-serif;
+}
+
+.intro {
+    max-height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.intro:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.4);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.intro__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 100px;
+    z-index: 3;
+}
+
+.intro__title {
+    margin: 0;
+    color: #fff;
+
+    font-size: 100px;
+    font-family: arial black, arial-w01-black, arial-w02-black, arial-w10 black, sans-serif;
+    font-style: normal;
+
+}
+
+.intro__span {
+    color: #fff;
+
+    font-size: 25px;
+    font-family: arial black, arial-w01-black, arial-w02-black, arial-w10 black, sans-serif;
+    font-weight: 100;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.video {
+    position: relative;
+    padding-bottom: 56.25%;
+}
+
+.video__media {
+    width: 100%;
+    height: auto;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+
+}
+
+.button__main {
+    text-align: left;
+    color: #fff;
+
+    margin-right: 48px;
+    margin-left: 35px;
+}
+
+.button__main:hover {
+    color: rgb(216, 96, 96);
+    transition: color 0.5s ease;
+}
+
+
+.button__about {
+    margin-right: 45px;
+    color: #fff;
+}
+
+.button__about:hover {
+    color: rgb(216, 96, 96);
+    transition: color 0.5s ease;
+}
+
+
+.button__training {
+    margin-right: 45px;
+    color: #fff;
+}
+
+.button__training:hover {
+    color: rgb(216, 96, 96);
+    transition: color 0.5s ease;
+}
+
+
+.button__contacts {
+    margin-right: 45px;
+    color: #fff;
+}
+
+.button__contacts:hover {
+    color: rgb(216, 96, 96);
+    transition: color 0.5s ease;
+}
+
+
+.button_online {
+    color: #fff;
+}
+
+.button_online:hover {
+    color: rgb(216, 96, 96);
+    transition: color 0.5s ease;
+}
+
+.buttons {
+    position: fixed;
+    margin-top: 18px;
+    z-index: 4;
+}
+
+.social {
+    z-index: 5;
+    position: fixed;
+
+    margin-top: 18px;
+    margin-left: 82%;
+
+    letter-spacing: 11px;
+    size: 8px;
+
+
+}
+
+a.training {
+    position: absolute;
+    color: #fff;
+    font-size: small;
+
+    margin-top: 30px;
+    margin-left: 8%;
+
+    border: rgb(216, 96, 96) 1px solid;
+    border-radius: 5%;
+
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+}
+
+a.training:hover {
+    color: white;
+    background: rgb(231, 73, 73);
+    transition: background 0.5s ease;
+}
+
+a.online {
+    position: absolute;
+    color: #fff;
+    font-size: small;
+
+    margin-top: 30px;
+    margin-left: 18%;
+    border-radius: 5%;
+
+    background-color: rgb(231, 73, 73);
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+}
+
+a.online:hover {
+    color: white;
+    background-color: rgb(143, 46, 46);
+    transition: background 0.5s ease;
+}
+
+.bio__backg img {
+
+    width: 750px;
+    height: 82.1vh;
+}
+
+.line {
+    padding: 30px;
+    letter-spacing: normal;
+
+    font-size: xx-large;
+    font-weight: normal;
+    font-family: sans-serif;
+
+    line-height: 1.2em;
+    text-align: center;
+
+    background-color: rgb(231, 73, 73);
+    color: #fff;
+
+}
+
+.bio__backg {
+    position: absolute;
+    text-align: left;
+    width: 300px;
+    height: 300px;
+}
+
+.bio__back {
+    margin-left: 49.1%;
+    background-color: #2B2B2B;
+
+    height: 600px;
+    max-width: 100%;
+}
+
+.bio__abme {
+    color: #545454;
+    left: 0;
+    font-size: 18px;
+    font-family: arial black, arial-w01-black, arial-w02-black, arial-w10 black, sans-serif;
+
+    text-align: center;
+    letter-spacing: 0.08em;
+    line-height: 1.1em;
+
+    padding-top: 130px;
+    margin-left: -530px;
+}
+
+.abme__name {
+    padding-top: 10px;
+    margin-left: 70px;
+
+    color: white;
+    font-family: arial black, arial-w01-black, arial-w02-black, arial-w10 black, sans-serif;
+    font-size: 40px;
+    line-height: 1em;
+    letter-spacing: 0.008em;
+}
+
+.abme__under {
+    color: white;
+
+    margin-left: 70px;
+    padding-top: 40px;
+
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+
+.training__h2 {
+    color: white;
+    font-family: arial black, arial-w01-black, arial-w02-black, arial-w10 black, sans-serif;
+    font-size: 38px;
+    line-height: 1em;
+    letter-spacing: 1.9px;
+
+    position: absolute;
+    top: 213%;
+    margin-left: 37%;
+    text-align: center;
+}
+
+.training__span {
+    position: absolute;
+    margin-top: 15.8%;
+    margin-left: 27.6%;
+
+
+    color: white;
+    text-align: center;
+
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+
+.background__media {
+    width: 100%;
+    height: auto;
+
+    position: absolute;
+    left: 0;
+
+}
+
+.training__background {
+    position: relative;
+}
+
+.first {
+    font-size: 97px;
+    font-family: arial black, arial-w01-black, arial-w02-black, arial-w10 black, sans-serif;
+}
+
+.trx {
+    font-family: arial black, arial-w01-black, arial-w02-black, arial-w10 black, sans-serif;
+    font-size: 17px;
+    font-weight: lighter;
+}
+
+.training__btn {
+    position: absolute;
+    color: #fff;
+    font-size: 17px;
+
+    margin-top: 55.3%;
+    margin-left: 45%;
+    border-radius: 3%;
+
+    background-color: rgb(231, 73, 73);
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.training__btn:hover {
+    color: white;
+    background-color: rgb(143, 46, 46);
+    transition: background 0.5s ease;
+}
+
+.history__background {
+    position: absolute;
+    background-image: url(./pic/hiring-personal-trainer.jpg);
+    background: linear-gradient(rgba(243, 53, 53, 0.664), rgba(243, 53, 53, 0.664)), url(./pic/hiring-personal-trainer.jpg);
+    background-size: cover;
+    height: 1000px;
+
+}
+
+.history__text {
+    position: absolute;
+    margin-left: 37%;
+    margin-top: 70%;
+    color: white;
+
+    font-size: 39px;
+    font-family: arial black, arial-w01-black, arial-w02-black, arial-w10 black, sans-serif;
+    font-weight: bold;
+    letter-spacing: 00.001em;
+}
+
+.first__review {
+    font-size: 33px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+
+}
+
+.firs__review {
+    font-size: 17px;
+    font-family: arial black, arial-w01-black, arial-w02-black, arial-w10 black, sans-serif;
+}
+
+.second__review {
+    font-size: 33px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+.seco__review {
+    font-size: 16px;
+    font-family: arial black, arial-w01-black, arial-w02-black, arial-w10 black, sans-serif;
+}
+
+.third__review {
+    font-size: 33px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+.thir__review {
+    font-size: 16px;
+    font-family: arial black, arial-w01-black, arial-w02-black, arial-w10 black, sans-serif;
+}
+
+.askme__backg {
+    margin-top: 125%;
+    position: absolute;
+    background-color: #222222;
+    width: 100%;
+    height: 70%;
+}
+
+.askme__inputs {
+    position: absolute;
+}
+
+#in {
+    background-color: #222222;
+    color: white;
+    border: white 2px solid;
+    text-overflow: ellipsis;
+
+    text-decoration: none;
+
+    height: 30px;
+    width: 320px;
+
+    padding-top: 12.5px;
+    padding-bottom: 12.5px;
+
+    margin-left: 240%;
+    margin-top: 640%;
+}
+
+#in:hover {
+    border: 1.5px white solid;
+}
+
+#in2 {
+    background-color: #222222;
+    color: white;
+    border: white 2px solid;
+    text-overflow: ellipsis;
+
+    text-decoration: none;
+
+    height: 30px;
+    width: 320px;
+
+    padding-top: 12.5px;
+    padding-bottom: 12.5px;
+
+    margin-left: 240%;
+
+}
+
+#in2:hover {
+    border: 1.5px white solid;
+}
+
+#in3 {
+    font-variant: normal;
+    background-color: #222222;
+    color: white;
+    border: white 2px solid;
+    text-overflow: ellipsis;
+
+    text-decoration: none;
+
+    height: 30px;
+    width: 320px;
+
+    padding-top: 12.5px;
+    padding-bottom: 12.5px;
+
+    margin-left: 240%;
+
+}
+
+#in3:hover {
+    border: 1.5px white solid;
+}
+
+#in4 {
+    background-color: #222222;
+    color: white;
+    border: white 2px solid;
+    text-overflow: ellipsis;
+
+    text-decoration: none;
+
+    height: 140px;
+    width: 320px;
+
+    padding-top: 12.5px;
+    padding-bottom: 12.5px;
+
+    margin-left: 240%;
+
+}
+
+#in4:hover {
+    border: 1.5px white solid;
+}
+
+.inputs__btn {
+    position: absolute;
+    color: #fff;
+    font-size: 14px;
+
+    right: 430px;
+    margin-top: 151.5%;
+    border-radius: 3%;
+
+    background-color: rgb(231, 73, 73);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 8px;
+    padding-bottom: 5px;
+
+
+}
+
+.inputs__btn:hover {
+    color: white;
+    background-color: rgb(143, 46, 46);
+    transition: background 0.5s ease;
+
+}
+
+.askme__writeme {
+    position: absolute;
+    color: #fff;
+
+    margin-top: 131%;
+    margin-left: 50.5%;
+
+    letter-spacing: 0.008em;
+    font-size: 29px;
+    font-family: arial black, arial-w01-black, arial-w02-black, arial-w10 black, sans-serif;
+    font-weight: 100;
+}
+
+
+.info__name {
+    margin-top: 131.3%;
+    margin-left: 20%;
+
+    letter-spacing: 0.008em;
+    font-size: 24px;
+    font-family: arial black, arial-w01-black, arial-w02-black, arial-w10 black, sans-serif;
+    font-weight: 100;
+}
+
+.info__adress {
+    margin-top: 138.3%;
+    margin-left: 20%;
+
+    letter-spacing: 0.008em;
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+.info__number {
+    margin-top: 142.3%;
+    margin-left: 20%;
+
+    letter-spacing: 0.008em;
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+.info__site {
+    margin-top: 146.3%;
+    margin-left: 20%;
+
+    letter-spacing: 0.008em;
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+.info__social {
+    margin-top: 148%;
+}
